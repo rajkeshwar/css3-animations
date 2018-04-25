@@ -1,0 +1,79 @@
+{
+  "path": "./spinners",
+  "name": "spinners",
+  "type": "folder",
+  "children": [
+    {
+      "path": "./spinners/_variables.scss",
+      "name": "_variables.scss",
+      "type": "file"
+    },
+    {
+      "path": "./spinners/spinkit.scss",
+      "name": "spinkit.scss",
+      "type": "file"
+    },
+    {
+      "path": "./spinners/spinners",
+      "name": "spinners",
+      "type": "folder",
+      "children": [
+        {
+          "path": "./spinners/spinners/1-rotating-plane.scss",
+          "name": "1-rotating-plane.scss",
+          "type": "file"
+        },
+        {
+          "path": "./spinners/spinners/10-fading-circle.scss",
+          "name": "10-fading-circle.scss",
+          "type": "file"
+        },
+        {
+          "path": "./spinners/spinners/11-folding-cube.scss",
+          "name": "11-folding-cube.scss",
+          "type": "file"
+        },
+        {
+          "path": "./spinners/spinners/2-double-bounce.scss",
+          "name": "2-double-bounce.scss",
+          "type": "file"
+        },
+        {
+          "path": "./spinners/spinners/3-wave.scss",
+          "name": "3-wave.scss",
+          "type": "file"
+        },
+        {
+          "path": "./spinners/spinners/4-wandering-cubes.scss",
+          "name": "4-wandering-cubes.scss",
+          "type": "file"
+        },
+        {
+          "path": "./spinners/spinners/5-pulse.scss",
+          "name": "5-pulse.scss",
+          "type": "file"
+        },
+        {
+          "path": "./spinners/spinners/6-chasing-dots.scss",
+          "name": "6-chasing-dots.scss",
+          "type": "file"
+        },
+        {
+          "path": "./spinners/spinners/7-three-bounce.scss",
+          "name": "7-three-bounce.scss",
+          "type": "file"
+        },
+        {
+          "path": "./spinners/spinners/8-circle.scss",
+          "name": "8-circle.scss",
+          "type": "file"
+        },
+        {
+          "path": "./spinners/spinners/9-cube-grid.scss",
+          "name": "9-cube-grid.scss",
+          "type": "file"
+        }
+      ]
+    }
+  ]
+}
