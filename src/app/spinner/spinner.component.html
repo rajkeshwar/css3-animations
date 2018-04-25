@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="side-nav">
+    <div class="source-tree">
+      <ul ng2v-tree class="ng2v-tree-content" [data]="treeJson" [children]="'children'">
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content--fixed">
+      <header class="site__header island">
+        <div class="wrap">
+          <span [innerHTML]="htmlExample"></span>
+        </div>
+      </header>
+      <main class="site__content island" role="content">
+        <div class="wrap">
+          <button class="butt js--triggerAnimation" (click)="viewSource()">View Source</button> 
+          <hr>
+          <div class="source-code">
+            <code class="language-scss">
+              <pre [innerHTML]="snippets" class="language-scss prettyprint"></pre>
+            </code>
+          </div>
+          <p>
+            <small>Another thing from
+              <a>Rajkeshwar Prasad</a>.</small>
+          </p>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="souce-modal">
+  <span class="cancel">X</span>
+  <code class="language-css">
+    <pre [innerHTML]="snippets" class="language-css"></pre>
+  </code>
+</div> -->

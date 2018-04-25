@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    height: 100%;
+    align-items: stretch;
+
+    > * {
+        border: 1px solid #ccc;
+        min-height: 100vh;
+
+        & + * {
+            border-left: none;
+        }
+    }
+
+    .side-nav {
+        flex: 1;
+        max-height: 100vh;
+        overflow: auto;
+    }
+
+    .content {
+        flex: 4;
+    }
+}
+
+.site__header {
+    text-align: center;
+}
+
+.site__content {
+    text-align: center;
+}
+
+#animationSandbox {
+    display: block;
+}

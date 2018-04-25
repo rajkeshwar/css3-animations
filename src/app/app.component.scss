@@ -1,36 +1,22 @@
-.container {
+.top-nav {
+    background: darken(#fff, 5%);
+    padding: 8px 30px;
+    box-shadow: 0 1px 20px -5px rgba(0,0,0,0.3);
     display: flex;
-    height: 100%;
-    align-items: stretch;
+    justify-content: flex-end;
 
-    > * {
-        border: 1px solid #ccc;
-        min-height: 100vh;
+    .item {
+        margin-right: 20px; 
+        position: relative;
+        padding: 10px;
+        outline: none;
 
-        & + * {
-            border-left: none;
+        &:hover {
+            cursor: pointer;
+        }
+
+        &.active {
+            background: #ccc;
         }
     }
-
-    .side-nav {
-        flex: 1;
-        max-height: 100vh;
-        overflow: auto;
-    }
-
-    .content {
-        flex: 4;
-    }
-}
-
-.site__header {
-    text-align: center;
-}
-
-.site__content {
-    text-align: center;
-}
-
-#animationSandbox {
-    display: block;
 }

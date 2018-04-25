@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="side-nav">
+    <div class="source-tree">
+      <ul ng2v-tree class="ng2v-tree-content" [data]="treeJson" [children]="'children'">
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content--fixed">
+      <header class="site__header island">
+        <div class="wrap">
+          <span id="animationSandbox" #animationEle>
+            <h1 class="site__title mega">CSS3 Animations</h1>
+          </span>
+          <span class="beta subhead">Just-add-water CSS animations</span> 
+        </div>
+      </header>
+      <main class="site__content island" role="content">
+        <div class="wrap">
+          <button class="butt js--triggerAnimation" (click)="viewSource()">View Source</button> 
+          <hr>
+          <div class="source-code">
+            <code class="language-css">
+              <pre [innerHTML]="snippets" class="language-css"></pre>
+            </code>
+          </div>
+          <!-- <p class="meta"><a href="https://raw.github.com/daneden/animate.css/master/animate.css" download="animate.css">Download Animate.css</a> or <a href="//github.com/daneden/animate.css">View on GitHub</a></p> -->
+          <p>
+            <small>Another thing from
+              <a href="//daneden.me">Rajkeshwar Prasad</a>.</small>
+          </p>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="souce-modal">
+  <span class="cancel">X</span>
+  <code class="language-css">
+    <pre [innerHTML]="snippets" class="language-css"></pre>
+  </code>
+</div> -->
