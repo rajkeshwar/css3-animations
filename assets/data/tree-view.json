@@ -1,0 +1,495 @@
+{
+  "path": "./animations",
+  "name": "animations",
+  "type": "folder",
+  "children": [
+    {
+      "path": "./animations/_base.css",
+      "name": "_base.css",
+      "type": "file"
+    },
+    {
+      "path": "./animations/attention_seekers",
+      "name": "attention_seekers",
+      "type": "folder",
+      "children": [
+        {
+          "path": "./animations/attention_seekers/bounce.css",
+          "name": "bounce.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/attention_seekers/flash.css",
+          "name": "flash.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/attention_seekers/headShake.css",
+          "name": "headShake.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/attention_seekers/jello.css",
+          "name": "jello.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/attention_seekers/pulse.css",
+          "name": "pulse.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/attention_seekers/rubberBand.css",
+          "name": "rubberBand.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/attention_seekers/shake.css",
+          "name": "shake.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/attention_seekers/swing.css",
+          "name": "swing.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/attention_seekers/tada.css",
+          "name": "tada.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/attention_seekers/wobble.css",
+          "name": "wobble.css",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "path": "./animations/bouncing_entrances",
+      "name": "bouncing_entrances",
+      "type": "folder",
+      "children": [
+        {
+          "path": "./animations/bouncing_entrances/bounceIn.css",
+          "name": "bounceIn.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/bouncing_entrances/bounceInDown.css",
+          "name": "bounceInDown.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/bouncing_entrances/bounceInLeft.css",
+          "name": "bounceInLeft.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/bouncing_entrances/bounceInRight.css",
+          "name": "bounceInRight.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/bouncing_entrances/bounceInUp.css",
+          "name": "bounceInUp.css",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "path": "./animations/bouncing_exits",
+      "name": "bouncing_exits",
+      "type": "folder",
+      "children": [
+        {
+          "path": "./animations/bouncing_exits/bounceOut.css",
+          "name": "bounceOut.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/bouncing_exits/bounceOutDown.css",
+          "name": "bounceOutDown.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/bouncing_exits/bounceOutLeft.css",
+          "name": "bounceOutLeft.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/bouncing_exits/bounceOutRight.css",
+          "name": "bounceOutRight.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/bouncing_exits/bounceOutUp.css",
+          "name": "bounceOutUp.css",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "path": "./animations/fading_entrances",
+      "name": "fading_entrances",
+      "type": "folder",
+      "children": [
+        {
+          "path": "./animations/fading_entrances/fadeIn.css",
+          "name": "fadeIn.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/fading_entrances/fadeInDown.css",
+          "name": "fadeInDown.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/fading_entrances/fadeInDownBig.css",
+          "name": "fadeInDownBig.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/fading_entrances/fadeInLeft.css",
+          "name": "fadeInLeft.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/fading_entrances/fadeInLeftBig.css",
+          "name": "fadeInLeftBig.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/fading_entrances/fadeInRight.css",
+          "name": "fadeInRight.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/fading_entrances/fadeInRightBig.css",
+          "name": "fadeInRightBig.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/fading_entrances/fadeInUp.css",
+          "name": "fadeInUp.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/fading_entrances/fadeInUpBig.css",
+          "name": "fadeInUpBig.css",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "path": "./animations/fading_exits",
+      "name": "fading_exits",
+      "type": "folder",
+      "children": [
+        {
+          "path": "./animations/fading_exits/fadeOut.css",
+          "name": "fadeOut.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/fading_exits/fadeOutDown.css",
+          "name": "fadeOutDown.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/fading_exits/fadeOutDownBig.css",
+          "name": "fadeOutDownBig.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/fading_exits/fadeOutLeft.css",
+          "name": "fadeOutLeft.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/fading_exits/fadeOutLeftBig.css",
+          "name": "fadeOutLeftBig.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/fading_exits/fadeOutRight.css",
+          "name": "fadeOutRight.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/fading_exits/fadeOutRightBig.css",
+          "name": "fadeOutRightBig.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/fading_exits/fadeOutUp.css",
+          "name": "fadeOutUp.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/fading_exits/fadeOutUpBig.css",
+          "name": "fadeOutUpBig.css",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "path": "./animations/flippers",
+      "name": "flippers",
+      "type": "folder",
+      "children": [
+        {
+          "path": "./animations/flippers/flip.css",
+          "name": "flip.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/flippers/flipInX.css",
+          "name": "flipInX.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/flippers/flipInY.css",
+          "name": "flipInY.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/flippers/flipOutX.css",
+          "name": "flipOutX.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/flippers/flipOutY.css",
+          "name": "flipOutY.css",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "path": "./animations/lightspeed",
+      "name": "lightspeed",
+      "type": "folder",
+      "children": [
+        {
+          "path": "./animations/lightspeed/lightSpeedIn.css",
+          "name": "lightSpeedIn.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/lightspeed/lightSpeedOut.css",
+          "name": "lightSpeedOut.css",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "path": "./animations/rotating_entrances",
+      "name": "rotating_entrances",
+      "type": "folder",
+      "children": [
+        {
+          "path": "./animations/rotating_entrances/rotateIn.css",
+          "name": "rotateIn.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/rotating_entrances/rotateInDownLeft.css",
+          "name": "rotateInDownLeft.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/rotating_entrances/rotateInDownRight.css",
+          "name": "rotateInDownRight.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/rotating_entrances/rotateInUpLeft.css",
+          "name": "rotateInUpLeft.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/rotating_entrances/rotateInUpRight.css",
+          "name": "rotateInUpRight.css",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "path": "./animations/rotating_exits",
+      "name": "rotating_exits",
+      "type": "folder",
+      "children": [
+        {
+          "path": "./animations/rotating_exits/rotateOut.css",
+          "name": "rotateOut.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/rotating_exits/rotateOutDownLeft.css",
+          "name": "rotateOutDownLeft.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/rotating_exits/rotateOutDownRight.css",
+          "name": "rotateOutDownRight.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/rotating_exits/rotateOutUpLeft.css",
+          "name": "rotateOutUpLeft.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/rotating_exits/rotateOutUpRight.css",
+          "name": "rotateOutUpRight.css",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "path": "./animations/sliding_entrances",
+      "name": "sliding_entrances",
+      "type": "folder",
+      "children": [
+        {
+          "path": "./animations/sliding_entrances/slideInDown.css",
+          "name": "slideInDown.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/sliding_entrances/slideInLeft.css",
+          "name": "slideInLeft.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/sliding_entrances/slideInRight.css",
+          "name": "slideInRight.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/sliding_entrances/slideInUp.css",
+          "name": "slideInUp.css",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "path": "./animations/sliding_exits",
+      "name": "sliding_exits",
+      "type": "folder",
+      "children": [
+        {
+          "path": "./animations/sliding_exits/slideOutDown.css",
+          "name": "slideOutDown.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/sliding_exits/slideOutLeft.css",
+          "name": "slideOutLeft.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/sliding_exits/slideOutRight.css",
+          "name": "slideOutRight.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/sliding_exits/slideOutUp.css",
+          "name": "slideOutUp.css",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "path": "./animations/specials",
+      "name": "specials",
+      "type": "folder",
+      "children": [
+        {
+          "path": "./animations/specials/hinge.css",
+          "name": "hinge.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/specials/jackInTheBox.css",
+          "name": "jackInTheBox.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/specials/rollIn.css",
+          "name": "rollIn.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/specials/rollOut.css",
+          "name": "rollOut.css",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "path": "./animations/zooming_entrances",
+      "name": "zooming_entrances",
+      "type": "folder",
+      "children": [
+        {
+          "path": "./animations/zooming_entrances/zoomIn.css",
+          "name": "zoomIn.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/zooming_entrances/zoomInDown.css",
+          "name": "zoomInDown.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/zooming_entrances/zoomInLeft.css",
+          "name": "zoomInLeft.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/zooming_entrances/zoomInRight.css",
+          "name": "zoomInRight.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/zooming_entrances/zoomInUp.css",
+          "name": "zoomInUp.css",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "path": "./animations/zooming_exits",
+      "name": "zooming_exits",
+      "type": "folder",
+      "children": [
+        {
+          "path": "./animations/zooming_exits/zoomOut.css",
+          "name": "zoomOut.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/zooming_exits/zoomOutDown.css",
+          "name": "zoomOutDown.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/zooming_exits/zoomOutLeft.css",
+          "name": "zoomOutLeft.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/zooming_exits/zoomOutRight.css",
+          "name": "zoomOutRight.css",
+          "type": "file"
+        },
+        {
+          "path": "./animations/zooming_exits/zoomOutUp.css",
+          "name": "zoomOutUp.css",
+          "type": "file"
+        }
+      ]
+    }
+  ]
+}
