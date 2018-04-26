@@ -13,6 +13,9 @@ before_script:
   - npm install -g @angular/cli
 
 script:
+  - node folder-tree.js
+  - node spinners-tree.js
+  - node css3icons-tree.js
   - ng build --prod --base-href "https://rajkeshwar.github.io/css3-animations/"
 
 after_success:

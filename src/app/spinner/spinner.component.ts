@@ -1,7 +1,7 @@
 import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 import { SPINNERS_SNIPPETS } from '../spinners-snippets';
 import { HttpClient } from '@angular/common/http';
-import { Broadcaster } from '../broadcaster';
+import { Broadcaster } from '../common/broadcaster';
 
 @Component({
   selector: 'css3-spinner',

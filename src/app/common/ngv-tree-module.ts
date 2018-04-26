@@ -2,8 +2,6 @@
 import { Component, OnInit, Input, Directive, HostListener, NgModule, Output, EventEmitter } from '@angular/core';
 import { Http } from '@angular/http';
 import { CommonModule } from '@angular/common';
-
-import { CODE_SNIPPETS } from './code-snippets';
 import { Broadcaster } from './broadcaster';
 
 

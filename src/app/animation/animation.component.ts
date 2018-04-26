@@ -1,7 +1,7 @@
 import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 import { CODE_SNIPPETS } from '../code-snippets';
 import { HttpClient } from '@angular/common/http';
-import { Broadcaster } from '../broadcaster';
+import { Broadcaster } from '../common/broadcaster';
 
 declare var require: any;
 

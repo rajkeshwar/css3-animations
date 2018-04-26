@@ -2,6 +2,11 @@ import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 import { CSS3ICONS_SNIPPETS } from '../css3icons-snippets';
 import { HttpClient } from '@angular/common/http';
 import { Broadcaster } from '../common/broadcaster';
+import { CSS3ICONO_LIST } from './css3icono-list';
+import * as cssbeautify from 'cssbeautify';
+import * as Prism from 'prismjs';
+
+declare var PR: any;
 
 @Component({
   selector: 'css3-css3icon',
@@ -16,14 +21,13 @@ export class Css3iconComponent implements OnInit {
   public htmlExample: string;
   public iconList: string[]; 
   public css3Icons: any; 
+  public showModal: boolean;
 
   constructor(private http: HttpClient, private broadcaster: Broadcaster) { }
 
   ngOnInit() {
 
-    const SKIP_ICONS = /functions|generals|arrow|paperclip|/;
-    // this.iconList = Object.keys(CSS3ICONS_SNIPPETS).filter(icon => !SKIP_ICONS.test(icon));
-    this.iconList = Object.keys(CSS3ICONS_SNIPPETS);
+    this.iconList = CSS3ICONO_LIST;
     this.http.get('assets/data/css3icons-tree.json')
       .subscribe(treeJson => this.treeJson = [treeJson]);
 
@@ -31,8 +35,10 @@ export class Css3iconComponent implements OnInit {
       .subscribe(css3icons => this.css3Icons = css3icons);
   }
 
-  public viewSource() {
-    this.snippets = this.currentSnippet;
+  public viewSource( source ) {
+    this.snippets = Prism.highlight(cssbeautify(source), Prism.languages.css, 'css');
+    this.showModal = true;
+    // setTimeout(_ => PR.prettyPrint(), 100);
   }
 
   getHtmlUsageExample( cssContent ) {
@@ -57,4 +63,5 @@ export class Css3iconComponent implements OnInit {
     let ret: any = multiClassString.replace(/(:before|:after|\.|,)/g, '');
     return [...Array.from(new Set(ret.split(/ /)))].slice(1).join(' ');
   }
+
 }
