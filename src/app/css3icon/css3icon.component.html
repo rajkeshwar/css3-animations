@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="side-nav">
+    <div class="source-tree">
+      <ul ng2v-tree class="ng2v-tree-content" [data]="treeJson" [children]="'children'">
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content--fixed">
+      <header class="site__header island">
+        <div class="wrap">
+          <span [innerHTML]="htmlExample"></span>
+        </div>
+      </header>
+      <main class="site__content island css3icons" role="content"> 
+        <div class="css3icons__wpr">
+          <ul class="css3">
+            <li class="css3__icon" *ngFor="let icon of iconList">
+              <i class="icono-{{toIconLabel(icon)}}"></i>
+            </li>
+          </ul>
+          <h3>Showing css3 icons</h3>
+          <ul class="kit_item">
+            <li class="kit_item__li {{firstClass(key)}}" 
+              *ngFor="let key of css3Icons|ObjectKeys" 
+              [inlineStyle]="css3Icons[key]">
+              <i class="kit-icon {{exceptFirstClass(key)}}"></i>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
