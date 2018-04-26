@@ -16,11 +16,11 @@
         <div class="wrap">
           <button class="butt js--triggerAnimation" (click)="viewSource()">View Source</button> 
           <hr>
-          <div class="source-code">
+          <!-- <div class="source-code">
             <code class="language-scss">
               <pre [innerHTML]="snippets" class="language-scss prettyprint"></pre>
             </code>
-          </div>
+          </div> -->
           <p>
             <small>Another thing from
               <a>Rajkeshwar Prasad</a>.</small>
@@ -31,9 +31,13 @@
   </div>
 </div>
 
-<!-- <div class="souce-modal">
-  <span class="cancel">X</span>
-  <code class="language-css">
-    <pre [innerHTML]="snippets" class="language-css"></pre>
-  </code>
-</div> -->
+<div class="css3-modal" *ngIf="showModal">
+  <div class="css3-modal__wpr">
+    <i class="css3-close icono-cross" (click)="showModal=false"></i>
+    <div class="css3-modal__content">
+      <code class="language-scss">
+        <pre [innerHTML]="snippets" class="language-scss prettyprint"></pre>
+      </code>
+    </div>
+  </div>
+</div>

@@ -34,3 +34,49 @@
 #animationSandbox {
     display: block;
 }
+
+.css3-modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.3);
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    &__wpr {
+        width: 60%;
+        max-height: calc(100vh - 100px);
+        background: #fff;
+        box-shadow: 0 3px 100px -1px rgba(0,0,0,0.5);
+        border-radius: 3px;
+        position: relative;
+        background: #f5f2f0;
+        display: flex;
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    &__content {
+        overflow: auto;
+        width: 100%;
+    }
+}
+
+.css3-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: lighten(#000, 40%);
+    transition: all .3s ease-in-out;
+    z-index: 9999;
+    
+    &:hover {
+        transform: rotate(45deg) scale(1.3);
+        cursor: pointer;
+    }
+}

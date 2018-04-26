@@ -26,7 +26,7 @@ export class Ng2vTreeComponent {
 })
 export class Ng2vFileHeader {
 
-    public isExpanded: boolean = false;
+    public isExpanded: boolean = true;
     constructor(private broadcaster: Broadcaster) { }
 
     @Input() item: any;

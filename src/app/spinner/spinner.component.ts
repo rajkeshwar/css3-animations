@@ -14,6 +14,7 @@ export class SpinnerComponent implements OnInit {
   public snippets: any;
   public currentSnippet: string;
   public htmlExample: string;
+  public showModal: boolean;
 
   constructor(private http: HttpClient, private broadcaster: Broadcaster) { }
 
@@ -26,14 +27,17 @@ export class SpinnerComponent implements OnInit {
       .subscribe((item: any) => {
         if (item.type === 'file') {
           this.currentSnippet = SPINNERS_SNIPPETS[item.path];
-          this.htmlExample = this.currentSnippet.match(/\*([^*]|[\r\n]|(\*([^/]|[\r\n])))*\*/)[0];
-          this.htmlExample = this.htmlDecode(this.getHtmlUsageExample(this.htmlExample));       
+          if( this.currentSnippet ) {
+            this.htmlExample = this.currentSnippet.match(/\*([^*]|[\r\n]|(\*([^/]|[\r\n])))*\*/)[0];
+            this.htmlExample = this.htmlDecode(this.getHtmlUsageExample(this.htmlExample));  
+          }   
         }
       })
   }
 
   public viewSource() {
     this.snippets = this.currentSnippet;
+    this.showModal = true;
   }
 
   getHtmlUsageExample( cssContent ) {

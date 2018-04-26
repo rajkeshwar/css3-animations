@@ -16,7 +16,7 @@ export class AnimationComponent implements OnInit {
   public snippets: any;
   public animationSandbox: HTMLElement;
   public currentSnippet: string;
-  public modalVisibility = false;
+  public showModal = false;
 
   @ViewChild('animationEle') animationEle: ElementRef;
 
@@ -43,7 +43,7 @@ export class AnimationComponent implements OnInit {
 
   public viewSource() {
     this.snippets = this.currentSnippet;
-    this.modalVisibility = true;
+    this.showModal = true;
   }
 
 }
