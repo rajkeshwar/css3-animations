@@ -28,5 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
   - ngh --no-silent --repo=https://GH_TOKEN@github.com/rajkeshwar/css3-animations.git
   
-  https://github.com/saeedalipoor/icono
-  http://www.uiplayground.in/css3-icons/
+  
+  [icono](https://github.com/saeedalipoor/icono)
+  [css3-icons](http://www.uiplayground.in/css3-icons/)
+  
