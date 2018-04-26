@@ -7,15 +7,18 @@
   </div> -->
   <div class="content">
     <div class="content--fixed">
-      <!-- <header class="site__header island">
-        <div class="wrap">
-          <span [innerHTML]="htmlExample"></span>
-        </div>
-      </header> -->
+      <header class="site__header island">
+        <h3 class="beta">Note: Each icon uses some common scss class or mixins. Please check either within these files</h3> 
+        <ul class="common-scss"  *ngFor="let folder of treeJson">
+          <li class="common-scss__item" (click)="viewCommonSource(common)"
+            *ngFor="let common of folder?.children|ValidCommon">{{common.name}}</li>
+        </ul>
+      </header>
       <main class="site__content island css3icons" role="content"> 
         <div class="css3icons__wpr">
           <ul class="css3">
-            <li class="css3__icon" *ngFor="let iconClassName of iconList">
+            <li class="css3__icon" *ngFor="let iconClassName of iconList" 
+              (click)="viewFileSouce(iconClassName)">
               <i [class]="iconClassName"></i>
             </li>
           </ul>
@@ -24,7 +27,9 @@
               *ngFor="let key of css3Icons|ObjectKeys" 
               (click)="viewSource(css3Icons[key])"
               [inlineStyle]="css3Icons[key]">
-              <i class="kit-icon {{exceptFirstClass(key)}}"></i>
+              <i class="kit-icon {{exceptFirstClass(key)[0]}}">
+                <i *ngIf="exceptFirstClass(key).length>1" [class]="exceptFirstClass(key)[1]"></i>
+              </i>
             </li>
           </ul>
         </div>

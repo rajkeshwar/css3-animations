@@ -15,7 +15,7 @@ declare var PR: any;
 })
 export class Css3iconComponent implements OnInit {
 
-  public treeJson: Array<any>;
+  public treeJson: any;
   public snippets: any;
   public currentSnippet: string;
   public htmlExample: string;
@@ -38,7 +38,26 @@ export class Css3iconComponent implements OnInit {
   public viewSource( source ) {
     this.snippets = Prism.highlight(cssbeautify(source), Prism.languages.css, 'css');
     this.showModal = true;
-    // setTimeout(_ => PR.prettyPrint(), 100);
+  }
+
+  public viewCommonSource( file ) {
+    this.snippets = CSS3ICONS_SNIPPETS[file.path];
+    this.showModal = true;
+  }
+
+  public viewFileSouce( iconClass ) {
+    let targetFilePath;
+    this.treeJson[0].children[3].children.forEach(item => {
+      let fileName = item.name.replace(/\.scss/, '');
+      let icon2ndPart = iconClass.replace('icono-', '');
+      if(new RegExp(fileName).test(icon2ndPart)) {
+        targetFilePath = item.path;
+        return;
+      }
+    })
+
+    this.snippets = CSS3ICONS_SNIPPETS[targetFilePath];
+    this.showModal = true;
   }
 
   getHtmlUsageExample( cssContent ) {
@@ -61,7 +80,7 @@ export class Css3iconComponent implements OnInit {
 
   exceptFirstClass( multiClassString ) {
     let ret: any = multiClassString.replace(/(:before|:after|\.|,)/g, '');
-    return [...Array.from(new Set(ret.split(/ /)))].slice(1).join(' ');
+    return  [...Array.from(new Set(ret.split(/ /)))].slice(1);
   }
 
 }

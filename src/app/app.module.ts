@@ -17,7 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { Css3iconComponent } from './css3icon/css3icon.component';
 import { StyleDirective } from './common/style.component';
-import { ObjectKeysPipe } from './common/common.pipe';
+import { ObjectKeysPipe, ValidCommonPipe } from './common/common.pipe';
 
 
 @NgModule({
@@ -27,7 +27,8 @@ import { ObjectKeysPipe } from './common/common.pipe';
     SpinnerComponent,
     Css3iconComponent,
     StyleDirective,
-    ObjectKeysPipe
+    ObjectKeysPipe,
+    ValidCommonPipe
   ],
   imports: [
     BrowserModule,

@@ -152,3 +152,32 @@
         cursor: pointer;
     }
 }
+
+.common-scss {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin: 0 50px 0 40px;
+
+    &__item {
+        padding: 10px;
+        border: 1px solid yellow;
+        flex: 1;
+        color: #fff;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 0 50px -5px rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+        & + li {
+            border-left: none;
+        }
+    }
+}
+
+h3.beta {
+    color: darken(#fff, 15%);
+    margin-bottom: 15px;
+}

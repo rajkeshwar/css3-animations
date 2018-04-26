@@ -8,3 +8,13 @@ export class ObjectKeysPipe implements PipeTransform {
   }
 
 }
+
+@Pipe({name: 'ValidCommon'})
+export class ValidCommonPipe implements PipeTransform {
+
+  transform(commonList): string[] {
+    commonList = commonList || [];
+    return commonList.filter(common => !/icons/.test(common.name));
+  }
+
+}
