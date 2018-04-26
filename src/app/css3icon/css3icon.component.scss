@@ -1,0 +1,99 @@
+
+
+.container {
+    display: flex;
+    height: 100%;
+    align-items: stretch;
+
+    > * {
+        border: 1px solid #ccc;
+        min-height: 100vh;
+
+        & + * {
+            border-left: none;
+        }
+    }
+
+    .side-nav {
+        flex: 1;
+        max-height: 100vh;
+        overflow: auto;
+    }
+
+    .content {
+        flex: 4;
+    }
+}
+
+.site__header {
+    text-align: center;
+}
+
+.site__content {
+    text-align: center;
+}
+
+#animationSandbox {
+    display: block;
+}
+
+.css3icons {
+    color: #eee;
+    background-color: #2ba5bb;
+    &__wpr {
+        
+        margin-right: 100px;
+    }
+}
+
+.css3 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__icon {
+        height: 64px;
+        width: 64px;
+        display: inline-block;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease-in-out;
+        border: 1px solid yellow;
+        margin: 2px;
+
+        &:hover {
+            background-color: darken(#2ba5bb, 30%);
+        }
+    }
+}
+
+.kit_item {
+    padding: 2px 0 0 2px;
+    float: left;
+    display: block;
+    background: #866cba;
+
+    &__li {
+        width: 90px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        margin-left: 23px;
+        margin-top: 23px;
+        background: #fff;
+        cursor: pointer;
+    }
+}
+
+.kit-icon {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
