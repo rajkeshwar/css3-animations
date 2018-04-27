@@ -36,9 +36,8 @@ export class SpinnerComponent implements OnInit {
   }
 
   public viewSource() {
-    this.snippets = this.currentSnippet;
-    this.snippets += '\n' + SPINNERS_SNIPPETS['./spinners/_variables.scss'];
-    this.snippets += '\n' + SPINNERS_SNIPPETS['./spinners/spinkit.scss'];
+    this.snippets += SPINNERS_SNIPPETS['./spinners/_variables.scss'];
+    this.snippets += '\n' + this.currentSnippet;
     this.showModal = true;
   }
 
