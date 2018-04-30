@@ -11,7 +11,7 @@ import { Broadcaster } from '../common/broadcaster';
 export class SpinnerComponent implements OnInit {
 
   public treeJson: Array<any>;
-  public snippets: any;
+  public snippets: string = '';
   public currentSnippet: string;
   public htmlExample: string;
   public showModal: boolean;
