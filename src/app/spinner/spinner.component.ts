@@ -11,7 +11,7 @@ import { Broadcaster } from '../common/broadcaster';
 export class SpinnerComponent implements OnInit {
 
   public treeJson: Array<any>;
-  public snippets: string = '';
+  public snippets: string;
   public currentSnippet: string;
   public htmlExample: string;
   public showModal: boolean;
@@ -36,6 +36,7 @@ export class SpinnerComponent implements OnInit {
   }
 
   public viewSource() {
+    this.snippets = '';
     this.snippets += SPINNERS_SNIPPETS['./spinners/_variables.scss'];
     this.snippets += '\n' + this.currentSnippet;
     this.showModal = true;
