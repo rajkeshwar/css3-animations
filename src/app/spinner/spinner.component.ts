@@ -27,10 +27,12 @@ export class SpinnerComponent implements OnInit {
       .subscribe((item: any) => {
         if (item.type === 'file') {
           this.currentSnippet = SPINNERS_SNIPPETS[item.path];
-          if( this.currentSnippet ) {
-            this.htmlExample = this.currentSnippet.match(/\*([^*]|[\r\n]|(\*([^/]|[\r\n])))*\*/)[0];
-            this.htmlExample = this.htmlDecode(this.getHtmlUsageExample(this.htmlExample));  
-          }   
+          if (this.currentSnippet) {
+            const htmlSnippets = this.currentSnippet.match(/\*([^*]|[\r\n]|(\*([^/]|[\r\n])))*\*/);
+            if (!htmlSnippets) return;
+
+            this.htmlExample = this.htmlDecode(this.getHtmlUsageExample(htmlSnippets[0]));
+          }
         }
       })
   }
@@ -40,7 +42,7 @@ export class SpinnerComponent implements OnInit {
     this.showModal = true;
   }
 
-  getHtmlUsageExample( cssContent ) {
+  getHtmlUsageExample(cssContent) {
     const match = cssContent.match(/Usage:([\s\S]+\*[.\s\S]+\>)/);
     return match && match.length > 1 ? match[1].replace(/ \*/g, '') : '';
   }
