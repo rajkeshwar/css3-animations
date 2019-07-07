@@ -3,6 +3,11 @@
 @import 'app/spinners/spinkit';
 @import 'app/css3icons/icono';
 
+pre[class*=language-] {
+    font-size: 13px;
+    line-height: 1.3;
+}
+
 [ng2v-tree] {
     list-style-type: none;
 }

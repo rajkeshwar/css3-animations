@@ -1,4 +1,4 @@
-declare var require:any;
+declare var require: any;
 export const CSS3ICONS_SNIPPETS={
 "./css3icons/functions.scss":require('!!prismjs-loader?lang=scss!./css3icons/functions.scss'),
 "./css3icons/generals.scss":require('!!prismjs-loader?lang=scss!./css3icons/generals.scss'),
